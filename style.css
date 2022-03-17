@@ -58,7 +58,42 @@ button{
     outline: none;
     background-color: blueviolet;
     color: white;
-    font-size: 18px;
+    font-size: 17px;
     cursor: pointer;
+    transition: 0.2s;
+    border-radius: 5px;
+    margin-top: 10px;
 
+}
+a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: white;
+}
+
+button span{
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+button span:after{
+
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -15px;
+transform: 0.5s;
+}
+
+button:hover span{
+    padding-right: 25px;
+
+
+}
+
+button:hover span:after{
+    opacity: 1;
+    right: 0;
 }
